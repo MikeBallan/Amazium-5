@@ -1,16 +1,35 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Form *****/
 form                                            { width:100%; display:flex; flex-direction:column; gap:var(--space-3); }
 * + form,
 form + *                                        { margin-top:var(--space-3); }
 
+/***** Fieldsets *****/
 fieldset                                        { border:none; padding:0; margin:0; width:100%; display:flex; flex-direction:column; gap:var(--space-2); }
 fieldset .message                               { margin:0; border-radius:0 0 var(--radius-md, 6px) var(--radius-md, 6px); top:-2px; display:none; color:var(--color-neutral-0); }
 
+/***** Labels *****/
 label, .label                                   { display:flex; flex-direction:column; width:100%; font-weight:600; color:var(--color-neutral-900); transition:all 0.2s ease; }
 label small, .label small                       { display:block; margin-top:var(--space-1); font-weight:400; }
 .txt--subtext                                   { color:var(--color-neutral-700); }
 
+/***** Iuput base styling *****/
 input, select, textarea                         { display:block; font-size:var(--text-sm); line-height:var(--leading-sm); font-family:inherit; color:var(--color-neutral-900); outline:0; border:none; -webkit-appearance:none; transition:all 0.2s ease; }
 
+/***** Focus & Diabled states *****/
 :focus-visible                                  { outline:1px solid var(--color-info-500); outline-offset:-1px; }
 .input:focus-within                             { box-shadow:var(--border-focus); transition:all 0.2s ease; }
 
@@ -22,16 +41,18 @@ input, select, textarea                         { display:block; font-size:var(-
 .input:has(input:focus)                         { box-shadow:var(--border-focus); transition:all 0.2s ease; }
 .input:has(input:disabled)                      { cursor:not-allowed; opacity:0.7; }
 
+/***** Invalid styling *****/
 .invalid > label,
 .invalid > .label                               { color:var(--color-negative-500); }
 .invalid > .input                               { box-shadow:var(--border-negative); border-radius:var(--radius-md) var(--radius-md) 0 0; }
 .invalid > .message                             { margin-top:-8px; padding:12px; display:block; background:var(--color-negative-500); box-shadow:0 0 1px 1px var(--color-negative-500) inset; }
 .invalid > .input--checkbox,
 .invalid > .input--radio,
-.invalid > .input--switch                        { box-shadow:none;
+.invalid > .input--switch                       { box-shadow:none;
   + .message                                    { margin-top:8px; border-radius:var(--radius-md); }
 }
 
+/***** Inout width overrides *****/
 .input--10pc                                    { width:10%; }
 .input--20pc                                    { width:20%; }
 .input--30pc                                    { width:30%; }
@@ -45,7 +66,7 @@ input, select, textarea                         { display:block; font-size:var(-
 /***********************************************
 Tablet - This applies from 750px onwards
 ***********************************************/
-@media (min-width:768px)                        {
+@media (min-width:750px)                        {
   fieldset                                      { max-width:500px; }
   .fieldset--widthMax                           { max-width:100%; }
 
@@ -62,4 +83,20 @@ Tablet - This applies from 750px onwards
   .inline__child--grid-7                        { flex:0 0 70%; }
   .inline__child--grid-8                        { flex:0 0 80%; }
   .inline__child--grid-9                        { flex:0 0 90%; }
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
 }

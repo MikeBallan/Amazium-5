@@ -1,19 +1,23 @@
 /*
-* Amazium Tables (Refactored)
-* Responsive, mobile-first table system
-*/
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
 
 /***********************************************
-Base
+Mobile First - This applies from 0px to 749px
 ***********************************************/
+
+/***** Base *****/
 table                                           { width:100%; border-collapse:separate; border-spacing:0; border-radius:var(--radius-sm); text-align:left; }
 table + *                                       { margin-top:var(--space-6); }
 
 caption                                         { font-weight:700; color:var(--color-neutral-900); background-color:var(--color-neutral-100); }
 
-/***********************************************
-Mobile (default)
-***********************************************/
 thead                                           { display:none; }
 
 tr                                              { display:flex; flex-direction:column; border:1px solid var(--color-neutral-600); border-radius:var(--radius-sm); overflow:hidden; transition:background 0.2s ease; }
@@ -30,9 +34,7 @@ td.txt--right                                   { text-align:left; }
 
 td small                                        { display:block; color:var(--color-neutral-600); }
 
-/***********************************************
-Helpers
-***********************************************/
+/***** Helpers *****/
 .td--wrap                                       { word-break:break-word; }
 
 .td--orderLast                                  { display:flex; order:1; border-top:1px solid var(--color-neutral-600); }
@@ -41,10 +43,9 @@ Helpers
 .td--toggle                                     { width:100%; }
 
 /***********************************************
-Tablet+
+Tablet - This applies from 750px onwards
 ***********************************************/
-@media (min-width:750px) {
-
+@media (min-width:750px)                        {
   table                                         { border:1px solid var(--color-neutral-600); }
 
   thead                                         { display:table-header-group; }
@@ -67,11 +68,6 @@ Tablet+
 
   th:first-child, td:first-child                { padding-left:var(--space-6); }
   th:last-child, td:last-child                  { padding-right:var(--space-6); }
-
-  /***** Expandable rows *****/
-  .tr__details > td                             { border-top:1px solid var(--color-neutral-600); }
-  .tr__details > td:before                      { content:''; position:absolute; left:-1px; top:0; width:4px; height:100%; background-color:var(--color-brand-500); }
-  .tr__details--open + .tr__details             { display:table-row; }
 
   /***** Simple table variant *****/
   .table--simple                                { border:none; }
@@ -102,10 +98,9 @@ Tablet+
 }
 
 /***********************************************
-Mobile visibility overrides
+Mobile ONLY - This applies from 0px to 749px
 ***********************************************/
-@media (max-width:749px) {
-
+@media only screen and (max-width:749px)        {
   td.hideMobile                                 { display:none !important; }
   td.hideTablet,
   td.hideScreen                                 { display:block !important; }

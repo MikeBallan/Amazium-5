@@ -1,17 +1,12 @@
 /*
-* Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2019, Mike Ballan
-* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
-*/
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Font-face setup
-- Fonts overrides
-- Navigation
-- Color examples setup
-- Media Queries
-*/
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
 
 /***********************************************
 Mobile First - This applies from 0px to 749px
@@ -29,14 +24,18 @@ Mobile First - This applies from 0px to 749px
 .btn--dialog:hover                              { background-color:transparent; color:var(--color-neutral-900); }
 .btn--dialog .icon                              { width:16px; height:16px; }
 
+/***** Header *****/
 .dialog__header                                 { padding:22px 30px; width:calc(100vw - 40px); display:flex; align-items:center; gap:12px; font-family:'txt-title', serif; font-size:var(--text-md); font-weight:bold; color:var(--color-neutral-900); background-color:var(--color-neutral-0); position:relative; border-bottom:1px solid var(--color-neutral-600);
   .btn--dialog                                  { top:50%; transform: translateY(-50%); }
 }
 
+/***** Body *****/
 .dialog__body                                   { padding:30px; width:calc(100vw - 40px); max-height:calc(100vh - 200px); background-color:var(--color-neutral-0); overflow-y:auto; position:relative; }
 
+/***** Footer *****/
 .dialog__footer                                 { padding:20px 30px; width:calc(100vw - 40px); display:flex; justify-content:flex-end; border-top:1px solid var(--color-neutral-600); background-color:var(--color-neutral-0); }
 
+/***** Erros states *****/
 .dialog--warning .dialog__header                { background-color:var(--color-warning-500); font-size:1.6rem; line-height:2rem; font-weight:bold; color:var(--color-neutral-900); }
 
 
@@ -47,4 +46,20 @@ Tablet - This applies from 768px onwards
   .dialog__header,
   .dialog__body,
   .dialog__footer                               { width:600px; }
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
 }

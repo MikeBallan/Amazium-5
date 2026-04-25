@@ -1,63 +1,51 @@
 /*
-* Amazium Utilities (Modernised)
-* Atomic utility classes for layout, text, display, and visibility
-*/
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
 
 /***********************************************
-Text Utilities
+Mobile First - This applies from 0px to 749px
 ***********************************************/
+
+/***** Text Utilities *****/
 .txt--truncate                                  { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .txt--noWrap                                    { white-space:nowrap; }
 
-/***********************************************
-Display Utilities
-***********************************************/
+/***** Display Utilities *****/
 .inline                                         { display:inline; }
 .block, .show                                   { display:block; }
-
 .hidden, .hide                                  { display:none !important; }
-
 .invisible                                      { display:none !important; visibility:hidden; }
 .visible                                        { display:block !important; visibility:visible; }
 
-/***********************************************
-Border Radius Utilities
-***********************************************/
+/***** Border Radius Utilities *****/
 .radius--none                                   { border-radius:var(--radius-none); }
 .radius--sm                                     { border-radius:var(--radius-sm); }
 .radius--md                                     { border-radius:var(--radius-md); }
 .radius--lg                                     { border-radius:var(--radius-lg); }
 .radius--xl                                     { border-radius:var(--radius-xl); }
-
-/* Fully rounded (pill/circle style) */
-.radius--pill                                   { border-radius:var(--radius-pill); }
-
-/* Semantic alias (optional shorthand) */
+.radius--pill,
 .rounded                                        { border-radius:var(--radius-pill); }
 
-/***********************************************
-Reset Utilities (Legacy Helpers)
-Note: Prefer component-level control over these where possible
-***********************************************/
+/***** Reset Utilities (Legacy Helpers) *****/
 .reset--padding                                 { padding:0 !important; }
 .reset--margin                                  { margin:0 !important; }
 .reset--indent                                  { margin-left:0 !important; padding-left:0 !important; }
 .reset--bullet                                  { list-style:none !important; list-style-image:none !important; }
 .reset--styling                                 { margin:0 !important; padding:0 !important; list-style:none !important; }
 
-
-/***********************************************
-Media Embed Utility
-***********************************************/
+/***** Media Embed Utility *****/
 .media                                          { position:relative; width:100%; height:0; padding-bottom:56.25%; background-color:var(--color-neutral-400, #E8ECF5); overflow:hidden; }
-
 .media iframe,
 .media object,
 .media embed                                    { position:absolute; inset:0; width:100%; height:100%; }
 
-/***********************************************
-Message Blocks
-***********************************************/
+/***** Message Blocks *****/
 .message                                        { padding:20px; display:flex; flex-direction:column; gap:8px; flex-grow:1; width:100%; position:relative; box-sizing:border-box; border-radius:var(--radius-md); box-shadow:var(--border-default); background-color:var(--color-neutral-100); }
 
 .message--positive                              { background-color:var(--color-positive-100); box-shadow:var(--border-positive); }
@@ -76,15 +64,7 @@ Message Blocks
 .message--negative strong,
 .message--negative .icon                        { color:var(--color-negative-500); }
 
-/***********************************************
-Responsive Visibility
-Mobile-first system aligned with breakpoints:
-- Mobile: default
-- Tablet: 750px+
-- Desktop: 1000px+
-***********************************************/
-
-/* Default (Mobile) */
+/***** Show & Hide *****/
 .show--mobile                                     { display:inherit !important; }
 .hide--mobile                                     { display:none !important; }
 
@@ -94,7 +74,10 @@ Mobile-first system aligned with breakpoints:
 .hide--tablet,
 .hide--screen                                     { display:inherit !important; }
 
-/* Tablet */
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
 @media (min-width:750px) {
   /***** Text alignment *****/
   .txt--left                                      { text-align:left; justify-content:flex-start; align-items:flex-start; }
@@ -102,6 +85,7 @@ Mobile-first system aligned with breakpoints:
   .txt--center                                    { text-align:center; justify-content:center; align-items:center; }
   .txt--justify                                   { text-align:justify; justify-content:center; align-items:center; }
 
+  /***** Show & Hide *****/
   .show--mobile                                   { display:none !important; }
   .hide--mobile                                   { display:inherit !important; }
 
@@ -112,9 +96,12 @@ Mobile-first system aligned with breakpoints:
   .hide--screen                                   { display:inherit !important; }
 }
 
-/* Desktop */
-@media (min-width:1000px) {
 
+/***********************************************
+Screen - This applies from 1000px onwards
+***********************************************/
+@media (min-width:1000px) {
+  /***** Show & Hide *****/
   .show--mobile                                   { display:none !important; }
   .hide--mobile                                   { display:inherit !important; }
 

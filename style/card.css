@@ -1,17 +1,12 @@
 /*
-* Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2019, Mike Ballan
-* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
-*/
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Font-face setup
-- Fonts overrides
-- Navigation
-- Color examples setup
-- Media Queries
-*/
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
 
 /***********************************************
 Mobile First - This applies from 0px to 749px
@@ -44,6 +39,14 @@ Mobile First - This applies from 0px to 749px
 
 
 /***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px) {
+
+}
+
+
+/***********************************************
 Screen - This applies from 1200px onwards
 ***********************************************/
 @media (min-width:1200px) {
@@ -52,9 +55,10 @@ Screen - This applies from 1200px onwards
   .card__footer                                           { padding:28px; }
 }
 
+
 /***********************************************
 Desktop HD
 ***********************************************/
-@media (min-width:1440px) {
+@media (min-width:1440px)                       {
 
 }

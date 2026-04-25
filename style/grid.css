@@ -1,10 +1,15 @@
 /*
-* Amazium Grid (Modernised)
-* CSS Grid-based layout system
-*/
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
 
 /***********************************************
-Base Grid (Mobile First = 1 Column)
+Mobile First - This applies from 0px to 749px
 ***********************************************/
 .grid                                           { display:grid; gap:var(--space-4); grid-template-columns:1fr; width:100%; max-width:1200px; margin-inline:auto; }
 .grid--fluid                                    { max-width:100%; }
@@ -103,12 +108,14 @@ Tablet - This applies from 750px onwards
   .grid__item--span-12                          { grid-column-end: span 12; }
 }
 
+
 /***********************************************
 Screen - This applies from 1200px onwards
 ***********************************************/
 @media (min-width:1200px)                       {
   
 }
+
 
 /***********************************************
 Desktop HD
@@ -117,12 +124,14 @@ Desktop HD
 
 }
 
+
 /***********************************************
 Tablet ONLY - This applies from 750px to 992px
 ***********************************************/
 @media only screen and (min-width:750px) and (max-width:1000px) {
 
 }
+
 
 /***********************************************
 Mobile ONLY - This applies from 0px to 749px

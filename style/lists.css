@@ -1,14 +1,12 @@
 /*
-* Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2019, Mike Ballan
-* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
-*/
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- List
-- list - Simple
-*/
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
 
 /***********************************************
 Mobile First - This applies from 0px to 749px
@@ -47,4 +45,20 @@ Tablet - This applies from 750px onwards
   .list--columns4 > li:nth-child(3),
   .list--columns4 > li:nth-child(4)             { margin:0; }
   .list--columns4 > li                          { margin-top:20px; padding-right:12px; flex:0 1 25%; min-width:25%; word-break:break-word; }
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
 }
