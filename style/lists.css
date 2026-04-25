@@ -1,0 +1,50 @@
+/*
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2019, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- List
+- list - Simple
+*/
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** List *****/
+.list                                           { margin-left:0; padding:0; list-style:none; width:100%; }
+*+.list, .list+* 												        { margin-top:20px; }
+
+/***** List - Simple *****/
+.list--simple 											            { margin:0; }
+*+.list--simple,
+.list--simple+*                                 { margin-top:40px; }
+.list--simple li										            { margin:0; padding:0; display:flex; gap:8px; flex-direction:row; align-items:center; }
+.list--simple li+*										          { margin-top:20px; padding-top:20px; border-top:1px solid var(--color-mist); }
+
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px)                        {
+  .list--columns2                               { display:flex; flex-direction:row; flex-wrap:wrap; }
+  .list--columns2 > li:first-child,
+  .list--columns2 > li:nth-child(2)             { margin:0; }
+  .list--columns2 > li                          { margin-top:20px; padding-right:12px; flex:0 1 50%; min-width:50%; word-break:break-word; }
+
+  .list--columns3                               { display:flex; flex-direction:row; flex-wrap:wrap; }
+  .list--columns3 > li:first-child,
+  .list--columns3 > li:nth-child(2),
+  .list--columns3 > li:nth-child(3)             { margin:0; }
+  .list--columns3 > li                          { margin-top:20px; padding-right:12px; flex:0 1 33.333%; min-width:33.333%; word-break:break-word; }
+
+  .list--columns4                               { display:flex; flex-direction:row; flex-wrap:wrap; }
+  .list--columns4 > li:first-child,
+  .list--columns4 > li:nth-child(2),
+  .list--columns4 > li:nth-child(3),
+  .list--columns4 > li:nth-child(4)             { margin:0; }
+  .list--columns4 > li                          { margin-top:20px; padding-right:12px; flex:0 1 25%; min-width:25%; word-break:break-word; }
+}

@@ -1,0 +1,126 @@
+/*
+* Amazium Utilities (Modernised)
+* Atomic utility classes for layout, text, display, and visibility
+*/
+
+/***********************************************
+Text Utilities
+***********************************************/
+.txt--truncate                                  { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.txt--noWrap                                    { white-space:nowrap; }
+
+/***********************************************
+Display Utilities
+***********************************************/
+.inline                                         { display:inline; }
+.block, .show                                   { display:block; }
+
+.hidden, .hide                                  { display:none !important; }
+
+.invisible                                      { display:none !important; visibility:hidden; }
+.visible                                        { display:block !important; visibility:visible; }
+
+/***********************************************
+Border Radius Utilities
+***********************************************/
+.radius--none                                   { border-radius:var(--radius-none); }
+.radius--sm                                     { border-radius:var(--radius-sm); }
+.radius--md                                     { border-radius:var(--radius-md); }
+.radius--lg                                     { border-radius:var(--radius-lg); }
+.radius--xl                                     { border-radius:var(--radius-xl); }
+
+/* Fully rounded (pill/circle style) */
+.radius--pill                                   { border-radius:var(--radius-pill); }
+
+/* Semantic alias (optional shorthand) */
+.rounded                                        { border-radius:var(--radius-pill); }
+
+/***********************************************
+Reset Utilities (Legacy Helpers)
+Note: Prefer component-level control over these where possible
+***********************************************/
+.reset--padding                                 { padding:0 !important; }
+.reset--margin                                  { margin:0 !important; }
+.reset--indent                                  { margin-left:0 !important; padding-left:0 !important; }
+.reset--bullet                                  { list-style:none !important; list-style-image:none !important; }
+.reset--styling                                 { margin:0 !important; padding:0 !important; list-style:none !important; }
+
+
+/***********************************************
+Media Embed Utility
+***********************************************/
+.media                                          { position:relative; width:100%; height:0; padding-bottom:56.25%; background-color:var(--color-neutral-400, #E8ECF5); overflow:hidden; }
+
+.media iframe,
+.media object,
+.media embed                                    { position:absolute; inset:0; width:100%; height:100%; }
+
+/***********************************************
+Message Blocks
+***********************************************/
+.message                                        { padding:20px; display:flex; flex-direction:column; gap:8px; flex-grow:1; width:100%; position:relative; box-sizing:border-box; border-radius:var(--radius-md); box-shadow:var(--border-default); background-color:var(--color-neutral-100); }
+
+.message--positive                              { background-color:var(--color-positive-100); box-shadow:var(--border-positive); }
+.message--positive strong,
+.message--positive .icon                        { color:var(--color-positive-500); }
+
+.message--info                                  { background-color:var(--color-info-100); box-shadow:var(--border-focus); }
+.message--info strong,
+.message--info .icon                            { color:var(--color-info-500); }
+
+.message--warning                               { background-color:var(--color-warning-100); box-shadow:var(--border-warning); }
+.message--warning strong,
+.message--warning .icon                         { color:var(--color-warning-500); }
+
+.message--negative                              { background-color:var(--color-negative-100); box-shadow:var(--border-negative); }
+.message--negative strong,
+.message--negative .icon                        { color:var(--color-negative-500); }
+
+/***********************************************
+Responsive Visibility
+Mobile-first system aligned with breakpoints:
+- Mobile: default
+- Tablet: 750px+
+- Desktop: 1000px+
+***********************************************/
+
+/* Default (Mobile) */
+.show--mobile                                     { display:inherit !important; }
+.hide--mobile                                     { display:none !important; }
+
+.show--tablet,
+.show--screen                                     { display:none !important; }
+
+.hide--tablet,
+.hide--screen                                     { display:inherit !important; }
+
+/* Tablet */
+@media (min-width:750px) {
+  /***** Text alignment *****/
+  .txt--left                                      { text-align:left; justify-content:flex-start; align-items:flex-start; }
+  .txt--right                                     { text-align:right; justify-content:flex-end; align-items:flex-end; }
+  .txt--center                                    { text-align:center; justify-content:center; align-items:center; }
+  .txt--justify                                   { text-align:justify; justify-content:center; align-items:center; }
+
+  .show--mobile                                   { display:none !important; }
+  .hide--mobile                                   { display:inherit !important; }
+
+  .show--tablet                                   { display:inherit !important; }
+  .hide--tablet                                   { display:none !important; }
+
+  .show--screen                                   { display:none !important; }
+  .hide--screen                                   { display:inherit !important; }
+}
+
+/* Desktop */
+@media (min-width:1000px) {
+
+  .show--mobile                                   { display:none !important; }
+  .hide--mobile                                   { display:inherit !important; }
+
+  .show--tablet                                   { display:none !important; }
+  .hide--tablet                                   { display:inherit !important; }
+
+  .show--screen                                   { display:inherit !important; }
+  .hide--screen                                   { display:none !important; }
+}

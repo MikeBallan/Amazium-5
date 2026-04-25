@@ -1,0 +1,27 @@
+/***** Pills *****/
+.pill                                           { padding:var(--space-1) var(--space-3); min-height:20px; display:inline-flex; min-height:26px; align-self:flex-start; line-height:initial; align-items:center; justify-content:center; gap:8px; font-size:var(--text-sm); font-weight:bold; background-color:var(--color-mist); fill:currentColor; color:var(--color-neutral-900); border:1px solid var(--color-neutral-600); border-radius:var(--radius-pill); vertical-align:middle; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.pill+.pill,
+.pill--onRight                                  { margin-left:6px; }
+
+.pill--s                                        { padding:4px 8px; font-size:var(--text-xs); min-height:12px; }
+.pill--s .icon                                  { width:10px; height:10px; }
+.pill--l                                        { padding:4px 16px; font-size:var(--text-md); min-height:40px; }
+
+.pill--defaultSolid                             { background-color:var(--color-neutral-900); color:var(--color-neutral-0); border-color:var(--color-neutral-900); }
+
+.pill--info                                     { background-color:var(--color-info-100); color:var(--color-info-500); border-color:var(--color-info-500); }
+.pill--infoSolid                                { background-color:var(--color-info-500); color:var(--color-neutral-0); border-color:var(--color-info-500); }
+
+.pill--negative                                 { background-color:var(--color-negative-100); color:var(--color-negative-500); border-color:var(--color-negative-500); }
+.pill--negativeSolid                            { background-color:var(--color-negative-500); color:var(--color-neutral-0); border-color:var(--color-negative-500); }
+
+.pill--positive                                 { background-color:var(--color-positive-100); color:var(--color-positive-500); border-color:var(--color-positive-500); }
+.pill--positiveSolid                            { background-color:var(--color-positive-500); color:var(--color-neutral-0); border-color:var(--color-positive-500); }
+
+.pill--warning                                  { background-color:var(--color-warning-100); color:var(--color-warning-500); border-color:var(--color-warning-500); }
+.pill--warningSolid                             { background-color:var(--color-warning-500); color:var(--color-neutral-0); border-color:var(--color-warning-500); }
+
+.pill--snow                                     { background-color:transparent; color:var(--color-neutral-0); border-color:var(--color-neutral-0); }
+.pill--snowSolid                                { background-color:var(--color-neutral-0); border-color:var(--color-neutral-0); }
+
+.pill--ghost                                    { background-color:transparent; border-color:var(--color-neutral-500); }

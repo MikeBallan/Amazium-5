@@ -1,0 +1,60 @@
+/*
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2019, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Font-face setup
+- Fonts overrides
+- Navigation
+- Color examples setup
+- Media Queries
+*/
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Cards *****/
+.card                                                     { padding:0; width:100%; background-color:var(--color-neutral-0); box-shadow:0px 0px 0px 1px var(--color-neutral-600); border-radius:var(--radius-sm); position:relative; }
+.card+*                                                   { margin-top:28px; }
+
+/***** Header *****/
+.card__header                                             { padding:20px; }
+.card__header + .card__body                               { box-shadow:0px -1px 0px var(--color-neutral-600); }
+
+/***** Body *****/
+.card__body                                               { padding:20px; display:flex; flex-direction:column; gap:20px; }
+.card__body + .card__footer                               { box-shadow:0px -1px 0px var(--color-neutral-600); }
+
+/***** Footer *****/
+.card__footer                                             { margin-top:auto; padding:20px; }
+
+/***** Tables *****/
+.card--hasTable .card__body                               { padding:0; }
+.card--hasTable table th                                  { border-radius:var(--radius-sm) var(--radius-sm); 0 0; }
+.card--hasTable table tr:last-child td:first-child        { border-radius:0 0 0 var(--radius-sm); }
+.card--hasTable table tr:last-child td:last-child         { border-radius:0 0 var(--radius-sm) 0; }
+
+/***** Split cards *****/
+.cards                                                    { margin:0; padding:0; list-style:none; display:grid; grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); grid-gap:24px; width:100%; }
+.cards li                                                 { margin:0; padding:0; display:flex; flex-direction:column; background-color:var(--color-neutral-0); box-shadow:0px 0px 0px 1px var(--color-neutral-600); border-radius:var(--radius-sm); position:relative; }
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+  .card__header                                           { padding:28px; }
+  .card__body                                             { padding:28px; }
+  .card__footer                                           { padding:28px; }
+}
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px) {
+
+}
