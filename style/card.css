@@ -13,7 +13,7 @@ Mobile First - This applies from 0px to 749px
 ***********************************************/
 
 /***** Cards *****/
-.card                                                   { margin:0; padding:0; width:100%; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-sm); position:relative; }
+.card                                                   { margin:0; padding:0; width:100%; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-sm); position:relative; transition:all 0.2s ease; }
 
 /***** Header *****/
 .card__header                                           { padding:var(--space-4); border-radius:var(--radius-sm) var(--radius-sm) 0 0; background-color:var(--color-ui-200); box-shadow:var(--border-default); }
@@ -31,8 +31,11 @@ Mobile First - This applies from 0px to 749px
 .card--hasTable table tr:last-child td:last-child       { border-radius:0 0 var(--radius-sm) 0; }
 
 /***** List Cards *****/
-.cards                                                  { padding-inline-start:0; list-style:none; display:grid; grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); grid-gap:24px; width:100%; }
-.cards li                                               { margin:0; padding:0; display:flex; flex-direction:column; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-sm); position:relative; }
+.cards                                                  { padding-inline-start:0; list-style:none; display:grid; grid-template-columns:repeat( auto-fit, minmax(260px, 1fr) ); grid-gap:24px; width:100%; }
+.cards li                                               { margin:0; padding:0; display:flex; flex-direction:column; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-sm); position:relative; transition:all 0.2s ease; }
+
+/***** Hover *****/
+.cards--hover li:hover                          		{ box-shadow:var(--border-hover); transition:all 0.2s ease; }
 
 
 /***********************************************

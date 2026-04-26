@@ -44,7 +44,7 @@ h2, .h2                                         { font-size:var(--text-3xl); lin
 h3, .h3                                         { font-size:var(--text-2xl); line-height:var(--leading-2xl); }
 h4, .h4                                         { font-size:var(--text-xl); line-height:var(--leading-xl); }
 h5, .h5                                         { font-size:var(--text-lg); line-height:var(--leading-lg); }
-h6, .h6                                         { font-size:var(--text-md); line-height:var(--leading-md); }
+h6, .h6                                         { font-size:var(--text-md); line-height:var(--leading-sm); }
 
 /***** Typography Elements *****/
 p                                               { max-width:75ch; margin:0; line-height:var(--leading-sm); text-wrap:pretty; }
