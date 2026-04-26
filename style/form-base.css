@@ -19,25 +19,25 @@ form + *                                        { margin-top:var(--space-3); }
 
 /***** Fieldsets *****/
 fieldset                                        { border:none; padding:0; margin:0; width:100%; display:flex; flex-direction:column; gap:var(--space-2); }
-fieldset .message                               { margin:0; border-radius:0 0 var(--radius-md, 6px) var(--radius-md, 6px); top:-2px; display:none; color:var(--color-neutral-0); }
+fieldset .message                               { margin:0; border-radius:0 0 var(--radius-md, 6px) var(--radius-md, 6px); top:-2px; display:none; color:var(--color-ui-0); }
 
 /***** Labels *****/
-label, .label                                   { display:flex; flex-direction:column; width:100%; font-weight:600; color:var(--color-neutral-900); transition:all 0.2s ease; }
+label, .label                                   { display:flex; flex-direction:column; width:100%; font-weight:600; color:var(--color-ui-900); transition:all 0.2s ease; }
 label small, .label small                       { display:block; margin-top:var(--space-1); font-weight:400; }
-.txt--subtext                                   { color:var(--color-neutral-700); }
+.txt--subtext                                   { color:var(--color-ui-700); }
 
 /***** Iuput base styling *****/
-input, select, textarea                         { display:block; font-size:var(--text-sm); line-height:var(--leading-sm); font-family:inherit; color:var(--color-neutral-900); outline:0; border:none; -webkit-appearance:none; transition:all 0.2s ease; }
+input, select, textarea                         { display:block; font-size:var(--text-sm); line-height:var(--leading-sm); font-family:inherit; color:var(--color-ui-900); outline:0; border:none; -webkit-appearance:none; transition:all 0.2s ease; }
 
 /***** Focus & Diabled states *****/
 :focus-visible                                  { outline:1px solid var(--color-info-500); outline-offset:-1px; }
 .input:focus-within                             { box-shadow:var(--border-focus); transition:all 0.2s ease; }
 
-:disabled                                       { cursor:not-allowed; color:var(--color-neutral-500); }
-:disabled::placeholder                          { color:var(--color-neutral-500); }
+:disabled                                       { cursor:not-allowed; color:var(--color-ui-500); }
+:disabled::placeholder                          { color:var(--color-ui-500); }
 .input:has(:disabled)                           { opacity:0.7; cursor:not-allowed; }
 
-.input                                          { width:100%; display:block; background:var(--color-neutral-0); border:none; box-shadow:var(--border-default); border-radius:var(--radius-md); overflow:hidden; box-sizing:border-box; transition:border-color 0.2s ease; }
+.input                                          { width:100%; display:block; background:var(--color-ui-0); border:none; box-shadow:var(--border-default); border-radius:var(--radius-md); overflow:hidden; box-sizing:border-box; transition:border-color 0.2s ease; }
 .input:has(input:focus)                         { box-shadow:var(--border-focus); transition:all 0.2s ease; }
 .input:has(input:disabled)                      { cursor:not-allowed; opacity:0.7; }
 

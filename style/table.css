@@ -16,28 +16,28 @@ Mobile First - This applies from 0px to 749px
 table                                           { width:100%; border-collapse:separate; border-spacing:0; border-radius:var(--radius-sm); text-align:left; }
 table + *                                       { margin-top:var(--space-6); }
 
-caption                                         { font-weight:700; color:var(--color-neutral-900); background-color:var(--color-neutral-100); }
+caption                                         { font-weight:700; color:var(--color-ui-900); background-color:var(--color-ui-100); }
 
 thead                                           { display:none; }
 
-tr                                              { display:flex; flex-direction:column; border:1px solid var(--color-neutral-600); border-radius:var(--radius-sm); overflow:hidden; transition:background 0.2s ease; }
+tr                                              { display:flex; flex-direction:column; border:1px solid var(--color-ui-600); border-radius:var(--radius-sm); overflow:hidden; transition:background 0.2s ease; }
 tr + tr                                         { margin-top:var(--space-5); }
 
-td                                              { display:block; padding:var(--space-3); min-height:3rem; color:var(--color-neutral-800); position:relative; }
-td + td                                         { border-top:1px solid var(--color-neutral-600); }
+td                                              { display:block; padding:var(--space-3); min-height:3rem; color:var(--color-ui-800); position:relative; }
+td + td                                         { border-top:1px solid var(--color-ui-600); }
 
-td[data-title]:before                           { content:attr(data-title) ":"; display:inline-block; width:30%; padding-right:var(--space-3); font-weight:700; color:var(--color-neutral-900); }
+td[data-title]:before                           { content:attr(data-title) ":"; display:inline-block; width:30%; padding-right:var(--space-3); font-weight:700; color:var(--color-ui-900); }
 
 td .cell-content                                { display:inline-block; width:68%; vertical-align:top; }
 
 td.txt--right                                   { text-align:left; }
 
-td small                                        { display:block; color:var(--color-neutral-600); }
+td small                                        { display:block; color:var(--color-ui-600); }
 
 /***** Helpers *****/
 .td--wrap                                       { word-break:break-word; }
 
-.td--orderLast                                  { display:flex; order:1; border-top:1px solid var(--color-neutral-600); }
+.td--orderLast                                  { display:flex; order:1; border-top:1px solid var(--color-ui-600); }
 .td--orderLast + *                              { border-top:none; }
 
 .td--toggle                                     { width:100%; }
@@ -46,7 +46,7 @@ td small                                        { display:block; color:var(--col
 Tablet - This applies from 750px onwards
 ***********************************************/
 @media (min-width:750px)                        {
-  table                                         { border:1px solid var(--color-neutral-600); }
+  table                                         { border:1px solid var(--color-ui-600); }
 
   thead                                         { display:table-header-group; }
 
@@ -54,9 +54,9 @@ Tablet - This applies from 750px onwards
 
   tr                                            { display:table-row; border-radius:0; }
   tr + tr                                       { margin-top:0; }
-  tr:hover                                      { background-color:var(--color-neutral-200); }
+  tr:hover                                      { background-color:var(--color-ui-200); }
 
-  td                                            { display:table-cell; padding:var(--space-2) var(--space-3); height:3rem; border-top:1px solid var(--color-neutral-600); vertical-align:middle; }
+  td                                            { display:table-cell; padding:var(--space-2) var(--space-3); height:3rem; border-top:1px solid var(--color-ui-600); vertical-align:middle; }
   td + td                                       {  }
 
   td[data-title]:before                         { display:none; }
@@ -87,7 +87,7 @@ Tablet - This applies from 750px onwards
   .td--input                                    { width:220px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 
   .td--orderLast                                { display:table-cell; }
-  .td--orderLast + *                            { border-top:1px solid var(--color-neutral-600); }
+  .td--orderLast + *                            { border-top:1px solid var(--color-ui-600); }
 
   /***** Visibility utilities (legacy support) *****/
   td.hideMobile                                 { display:table-cell !important; }

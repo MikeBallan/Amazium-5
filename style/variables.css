@@ -51,7 +51,7 @@
   --leading-4xl:          3rem;         /* 48px */
 
   /***** Border system using inset shadows *****/
-  --border-default:       inset 0 0 0 1px var(--color-neutral-600);
+  --border-default:       inset 0 0 0 1px var(--color-ui-600);
   --border-focus:         inset 0 0 0 1px var(--color-info-500);
   --border-positive:      inset 0 0 0 1px var(--color-positive-500);
   --border-warning:       inset 0 0 0 1px var(--color-warning-500);
@@ -101,22 +101,22 @@
   --color-info-800:       #1E3A8A;
 
   /***** Neutral scale *****/
-  --color-neutral-0:      #FFFFFF;      /* snow */
-  --color-neutral-100:    #FAFCFF;      /* haze */
-  --color-neutral-200:    #F4F7FB;
-  --color-neutral-300:    #EEF2F8;
-  --color-neutral-400:    #E8ECF5;      /* mist */
-  --color-neutral-500:    #C9D2E3;
-  --color-neutral-600:    #AAB7CF;
-  --color-neutral-700:    #5A6A85;
-  --color-neutral-800:    #2F3F5C;
-  --color-neutral-900:    #000D22;      /* black */
+  --color-ui-0:           #FFFFFF;      /* snow */
+  --color-ui-100:         #FAFCFF;      /* haze */
+  --color-ui-200:         #F4F7FB;
+  --color-ui-300:         #EEF2F8;
+  --color-ui-400:         #E8ECF5;      /* mist */
+  --color-ui-500:         #C9D2E3;
+  --color-ui-600:         #AAB7CF;
+  --color-ui-700:         #5A6A85;
+  --color-ui-800:         #2F3F5C;
+  --color-ui-900:         #000D22;      /* black */
 
   /***** Semantic aliases *****/
   --color-primary:        var(--color-brand-500);
   --color-secondary:      var(--color-accent-500);
-  --color-snow:           var(--color-neutral-0);
-  --color-haze:           var(--color-neutral-50);
-  --color-mist:           var(--color-neutral-300);
-  --color-black:          var(--color-neutral-900);
+  --color-snow:           var(--color-ui-0);
+  --color-haze:           var(--color-ui-50);
+  --color-mist:           var(--color-ui-300);
+  --color-black:          var(--color-ui-900);
 }

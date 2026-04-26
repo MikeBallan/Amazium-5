@@ -13,19 +13,16 @@ Mobile First - This applies from 0px to 749px
 ***********************************************/
 
 /***** Cards *****/
-.card                                                     { padding:0; width:100%; background-color:var(--color-neutral-0); box-shadow:0px 0px 0px 1px var(--color-neutral-600); border-radius:var(--radius-sm); position:relative; }
-.card+*                                                   { margin-top:28px; }
+.card                                                     { margin:0; padding:0; width:100%; background-color:var(--color-ui-100); box-shadow:var(--border-default); border-radius:var(--radius-sm); position:relative; }
 
 /***** Header *****/
-.card__header                                             { padding:20px; }
-.card__header + .card__body                               { box-shadow:0px -1px 0px var(--color-neutral-600); }
+.card__header                                             { padding:var(--space-4); }
 
 /***** Body *****/
-.card__body                                               { padding:20px; display:flex; flex-direction:column; gap:20px; }
-.card__body + .card__footer                               { box-shadow:0px -1px 0px var(--color-neutral-600); }
+.card__body                                               { padding:var(--space-4); display:flex; flex-direction:column; gap:20px; }
 
 /***** Footer *****/
-.card__footer                                             { margin-top:auto; padding:20px; }
+.card__footer                                             { margin-top:auto; padding:var(--space-4); }
 
 /***** Tables *****/
 .card--hasTable .card__body                               { padding:0; }
@@ -34,8 +31,8 @@ Mobile First - This applies from 0px to 749px
 .card--hasTable table tr:last-child td:last-child         { border-radius:0 0 var(--radius-sm) 0; }
 
 /***** Split cards *****/
-.cards                                                    { margin:0; padding:0; list-style:none; display:grid; grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); grid-gap:24px; width:100%; }
-.cards li                                                 { margin:0; padding:0; display:flex; flex-direction:column; background-color:var(--color-neutral-0); box-shadow:0px 0px 0px 1px var(--color-neutral-600); border-radius:var(--radius-sm); position:relative; }
+.cards                                                    { padding-inline-start:0; list-style:none; display:grid; grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); grid-gap:24px; width:100%; }
+.cards li                                                 { margin:0; padding:0; display:flex; flex-direction:column; background-color:var(--color-ui-100); box-shadow:var(--border-default); border-radius:var(--radius-sm); position:relative; }
 
 
 /***********************************************
@@ -50,9 +47,7 @@ Tablet - This applies from 750px onwards
 Screen - This applies from 1200px onwards
 ***********************************************/
 @media (min-width:1200px) {
-  .card__header                                           { padding:28px; }
-  .card__body                                             { padding:28px; }
-  .card__footer                                           { padding:28px; }
+
 }
 
 

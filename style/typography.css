@@ -37,7 +37,7 @@ body *                                          { letter-spacing:0.02em; }
 
 /***** Headings *****/
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6                    { font-family:'txt-title', serif; color:var(--color-neutral-900); margin:0; text-wrap:pretty; }
+.h1, .h2, .h3, .h4, .h5, .h6                    { font-family:'txt-title', serif; color:var(--color-ui-900); margin:0; text-wrap:pretty; }
 
 h1, .h1                                         { font-size:var(--text-4xl); line-height:var(--leading-4xl); }
 h2, .h2                                         { font-size:var(--text-3xl); line-height:var(--leading-3xl); }
@@ -54,7 +54,7 @@ small                                           { font-size:0.875em; }
 sup, sub                                        { font-size:0.75em; line-height:0; position:relative; vertical-align:baseline; }
 sup                                             { top:-0.4em; }
 sub                                             { bottom:-0.25em; }
-hr                                              { border:0; height:1px; background:var(--color-neutral-600); width:60px; margin:2rem 0; }
+hr                                              { border:0; height:1px; background:var(--color-ui-600); width:60px; margin:2rem 0; }
 
 /***** Links *****/
 a                                               { color:inherit; text-decoration:underline; transition:all 0.2s ease; }
@@ -71,16 +71,16 @@ a                                               { color:inherit; text-decoration
 .dl-qanda                                       { margin-top:5rem; }
 
 .dl-qanda dt,
-.dl-qanda dd                                    { margin-left:2.5rem; padding-left:1.5rem; border-left:1px solid var(--color-neutral-900); position:relative; }
+.dl-qanda dd                                    { margin-left:2.5rem; padding-left:1.5rem; border-left:1px solid var(--color-ui-900); position:relative; }
 
 .dl-qanda dt                                    { font-size:2rem; margin-bottom:1rem; }
-.dl-qanda dt::before                            { content:"Q"; position:absolute; left:-2.5rem; top:0; font-weight:bold; color:var(--color-neutral-700); }
+.dl-qanda dt::before                            { content:"Q"; position:absolute; left:-2.5rem; top:0; font-weight:bold; color:var(--color-ui-700); }
 
 .dl-qanda dd                                    { margin-bottom:4rem; display:flex; flex-direction:column; gap:2rem; }
-.dl-qanda dd::before                            { content:"A"; position:absolute; left:-2.5rem; top:0; font-weight:bold; color:var(--color-neutral-700); }
+.dl-qanda dd::before                            { content:"A"; position:absolute; left:-2.5rem; top:0; font-weight:bold; color:var(--color-ui-700); }
 
 /***** Blockquotes / Figures *****/
-figure                                          { padding:10px 0 10px 20px; border-left:2px solid var(--color-neutral-800); position:relative; }
+figure                                          { padding:10px 0 10px 20px; border-left:2px solid var(--color-ui-800); position:relative; }
 
 blockquote                                      { margin:0; padding:0; }
 blockquote p                                    { font-style:italic; }
@@ -88,7 +88,7 @@ blockquote a                                    { display:inline-block; }
 
 figcaption                                      { padding:0; }
 figcaption::before                              { content:'\2014'; display:block; }
-figcaption > span                               { margin:0; padding:0 5px; display:inline-block; background-color:var(--color-neutral-900); color:var(--color-neutral-0); border-radius:var(--radius-md); }
+figcaption > span                               { margin:0; padding:0 5px; display:inline-block; background-color:var(--color-ui-900); color:var(--color-ui-0); border-radius:var(--radius-md); }
 
 /***********************************************
 Tablet - This applies from 750px onwards

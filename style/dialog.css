@@ -20,23 +20,23 @@ Mobile First - This applies from 0px to 749px
 .dialog >:last-child                            { border-radius:0 0 5px 5px; }
 .dialog >:only-child                            { border-radius:5px; }
 
-.btn--dialog                                    { padding:0; width:16px; height:16px; background-color:transparent; color:var(--color-neutral-600); position:absolute; top:25px; right:28px; left:auto; z-index:10; }
-.btn--dialog:hover                              { background-color:transparent; color:var(--color-neutral-900); }
+.btn--dialog                                    { padding:0; width:16px; height:16px; background-color:transparent; color:var(--color-ui-600); position:absolute; top:25px; right:28px; left:auto; z-index:10; }
+.btn--dialog:hover                              { background-color:transparent; color:var(--color-ui-900); }
 .btn--dialog .icon                              { width:16px; height:16px; }
 
 /***** Header *****/
-.dialog__header                                 { padding:22px 30px; width:calc(100vw - 40px); display:flex; align-items:center; gap:12px; font-family:'txt-title', serif; font-size:var(--text-md); font-weight:bold; color:var(--color-neutral-900); background-color:var(--color-neutral-0); position:relative; border-bottom:1px solid var(--color-neutral-600);
+.dialog__header                                 { padding:22px 30px; width:calc(100vw - 40px); display:flex; align-items:center; gap:12px; font-family:'txt-title', serif; font-size:var(--text-md); font-weight:bold; color:var(--color-ui-900); background-color:var(--color-ui-0); position:relative; border-bottom:1px solid var(--color-ui-600);
   .btn--dialog                                  { top:50%; transform: translateY(-50%); }
 }
 
 /***** Body *****/
-.dialog__body                                   { padding:30px; width:calc(100vw - 40px); max-height:calc(100vh - 200px); background-color:var(--color-neutral-0); overflow-y:auto; position:relative; }
+.dialog__body                                   { padding:30px; width:calc(100vw - 40px); max-height:calc(100vh - 200px); background-color:var(--color-ui-0); overflow-y:auto; position:relative; }
 
 /***** Footer *****/
-.dialog__footer                                 { padding:20px 30px; width:calc(100vw - 40px); display:flex; justify-content:flex-end; border-top:1px solid var(--color-neutral-600); background-color:var(--color-neutral-0); }
+.dialog__footer                                 { padding:20px 30px; width:calc(100vw - 40px); display:flex; justify-content:flex-end; border-top:1px solid var(--color-ui-600); background-color:var(--color-ui-0); }
 
 /***** Erros states *****/
-.dialog--warning .dialog__header                { background-color:var(--color-warning-500); font-size:1.6rem; line-height:2rem; font-weight:bold; color:var(--color-neutral-900); }
+.dialog--warning .dialog__header                { background-color:var(--color-warning-500); font-size:1.6rem; line-height:2rem; font-weight:bold; color:var(--color-ui-900); }
 
 
 /***********************************************

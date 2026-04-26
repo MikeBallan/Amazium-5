@@ -42,70 +42,79 @@
 </head>
 <body>
 
-<section class="section">
+<section class="demo--section">
   <div class="grid">
     <div class="grid__item grid__item--12">
       <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" class="icon icon--xxl"><path d="M63 0v63H0V0zm-3 3H3v57h57zM25.044 18l10.352 28h-6.863l-2.043-5.88H15.77L13.728 46H7l10.352-28zM54 26v4.71l-8.332 9.643H54V46H37.354v-4.567l8.332-9.786h-8.332V26zm-32.802-1-3.427 9h6.854zm30.18-14.233q.224 0 .392.172a.574.574 0 0 1 0 .811.533.533 0 0 1-.786 0 .57.57 0 0 1-.002-.81.54.54 0 0 1 .396-.173m3.402-2.7v.807h-1.437l-.015.595h.361l.2.008q.481.044.768.304.343.312.343.83 0 .597-.392.955-.392.36-1.002.359-.41 0-.751-.144a1.8 1.8 0 0 1-.452-.27l-.124-.114.422-.643.111.094q.122.091.289.165.25.111.5.111.251 0 .385-.123a.43.43 0 0 0 .133-.331q0-.38-.511-.422l-.136-.006h-.907l.047-2.174zM48.956 8q.382 0 .693.128.31.13.498.38a.95.95 0 0 1 .188.585q0 .584-.554.85.645.267.645.88a.92.92 0 0 1-.2.59 1.23 1.23 0 0 1-.532.38 2 2 0 0 1-.738.129q-.407 0-.738-.128a1.23 1.23 0 0 1-.532-.382.92.92 0 0 1-.2-.588q0-.617.642-.882-.55-.265-.55-.85 0-.332.187-.583a1.15 1.15 0 0 1 .496-.38Q48.573 8 48.956 8m-1.767.068v.687l-1.447 3.1h-1.011l1.446-2.973h-1.643v-.814zm1.767 2.212a.62.62 0 0 0-.388.12.39.39 0 0 0-.157.326q0 .207.156.32a.64.64 0 0 0 .389.113.64.64 0 0 0 .386-.113.37.37 0 0 0 .156-.32.39.39 0 0 0-.157-.327.6.6 0 0 0-.385-.119m0-1.504a.53.53 0 0 0-.338.106.35.35 0 0 0-.134.295q0 .192.134.301.134.11.338.11a.5.5 0 0 0 .335-.11.37.37 0 0 0 .134-.301.35.35 0 0 0-.134-.295.53.53 0 0 0-.335-.106"/></svg>
-      <!-- <svg aria-hidden="true" class="icon icon--xxl" width="64" height="64" viewBox="0 0 64 64"><path d="M64 64H0V0h64V64zM2.7 61.3h58.7V2.7H2.7V61.3z"></path><path d="M8 46.8l12-30.2h4.1l12 30.2h-4.5l-3.2-8.5H15.8l-3.2 8.5H8zM17.3 34.4h9.6l-4.8-12.5L17.3 34.4z"></path><path d="M39.1 46.8v-3.8L50.6 28H39.4v-3.8h16.5v3.8L44.5 42.8h11.5v3.9H39.1z"></path><path d="M48.1 8.1V7.7h2.3v0.4L49 11h-0.5l1.4-2.9H48.1z"></path><path d="M50.5 10c0-0.2 0-0.3 0.1-0.5s0.2-0.2 0.4-0.3c-0.3-0.2-0.4-0.4-0.4-0.7 0-0.2 0.1-0.5 0.3-0.6s0.4-0.3 0.8-0.3 0.6 0.1 0.8 0.3 0.3 0.4 0.3 0.6c0 0.3-0.1 0.5-0.4 0.7 0.3 0.2 0.5 0.4 0.5 0.8 0 0.3-0.1 0.5-0.3 0.7S52 11 51.6 11s-0.7-0.1-0.9-0.3C50.6 10.5 50.5 10.3 50.5 10zM50.9 10c0 0.1 0 0.1 0 0.2s0 0.1 0.1 0.2 0.1 0.1 0.2 0.2 0.2 0.1 0.4 0.1 0.3 0 0.4-0.1 0.2-0.1 0.2-0.2c0-0.1 0.1-0.1 0.1-0.2s0-0.1 0-0.2c0-0.4-0.2-0.6-0.7-0.6S50.9 9.6 50.9 10zM51 8.5c0 0.1 0 0.1 0 0.1 0 0 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.2 0.1S51.5 9 51.6 9s0.2 0 0.3-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.1-0.2c0 0 0-0.1 0-0.1C52.2 8.2 52 8 51.6 8 51.2 8 51 8.2 51 8.5z"></path><path d="M53.2 11v-0.4h0.5V11H53.2z"></path><path d="M54.1 9.2l0.2-1.5h1.8v0.4h-1.4l-0.1 0.8c0.2 0 0.3-0.1 0.5-0.1 0 0 0 0 0 0 0.4 0 0.7 0.1 0.9 0.3s0.3 0.4 0.3 0.8 -0.1 0.6-0.3 0.8c-0.2 0.2-0.5 0.3-0.9 0.3s-0.7-0.1-1-0.2v-0.5c0.2 0.2 0.5 0.3 0.9 0.3 0.3 0 0.5-0.1 0.6-0.2s0.2-0.3 0.2-0.5c0-0.2-0.1-0.4-0.2-0.5S55.3 9.3 55 9.3c-0.2 0-0.5 0-0.7 0.1L54.1 9.2z"></path></svg> -->
       <h1>Amazium</h1>
       <p>A lightweight and modern CSS framework built with Grid & Flexbox. Designed for rapid prototyping, Amazium provides a versatile collection of modular components—from typography to forms—so you can focus on what truly matters: creating exceptional designs with ease.</p>
+      <div class="btn-group">
+        <a href="https://github.com/MikeBallan/Amazium-5" target="_blank" class="btn"><svg aria-hidden="true" class="icon" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"></path></svg>Download</a>
+        <a href="http://www.amazium.co.uk" target="_blank" class="btn btn--ghost">Documentation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo--section">
+  <div class="grid">
+    <div class="grid__item grid__item--span-12">
+      <h2>Grid System</h2>
+      <p>Responsive 12-column layout.</p>
     </div>
   </div>
 
   <div class="grid">
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-1 grid__item--demo">One</div>
-    <div class="grid__item grid__item--span-4 grid__item--demo">Four</div>
-    <div class="grid__item grid__item--span-4 grid__item--demo">Four</div>
-    <div class="grid__item grid__item--span-4 grid__item--demo">Four</div>
-    <div class="grid__item grid__item--span-3 grid__item--demo">Three</div>
-    <div class="grid__item grid__item--span-6 grid__item--demo">Six</div>
-    <div class="grid__item grid__item--span-3 grid__item--demo">Three</div>
-    <div class="grid__item grid__item--span-2 grid__item--demo">Two</div>
-    <div class="grid__item grid__item--span-8 grid__item--demo">Eight</div>
-    <div class="grid__item grid__item--span-2 grid__item--demo">Two</div>
-    <div class="grid__item grid__item--span-3 grid__item--demo">Three</div>
-    <div class="grid__item grid__item--span-9 grid__item--demo">Nine</div>
-    <div class="grid__item grid__item--span-4 grid__item--demo">Four</div>
-    <div class="grid__item grid__item--span-8 grid__item--demo">Eight</div>
-    <div class="grid__item grid__item--span-5 grid__item--demo">Five</div>
-    <div class="grid__item grid__item--span-7 grid__item--demo">Seven</div>
-    <div class="grid__item grid__item--span-6 grid__item--demo">Six</div>
-    <div class="grid__item grid__item--span-6 grid__item--demo">Six</div>
-    <div class="grid__item grid__item--span-12 grid__item--demo">Twelve</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-1 demo--grid">One</div>
+    <div class="grid__item grid__item--span-4 demo--grid">Four</div>
+    <div class="grid__item grid__item--span-4 demo--grid">Four</div>
+    <div class="grid__item grid__item--span-4 demo--grid">Four</div>
+    <div class="grid__item grid__item--span-3 demo--grid">Three</div>
+    <div class="grid__item grid__item--span-6 demo--grid">Six</div>
+    <div class="grid__item grid__item--span-3 demo--grid">Three</div>
+    <div class="grid__item grid__item--span-2 demo--grid">Two</div>
+    <div class="grid__item grid__item--span-8 demo--grid">Eight</div>
+    <div class="grid__item grid__item--span-2 demo--grid">Two</div>
+    <div class="grid__item grid__item--span-3 demo--grid">Three</div>
+    <div class="grid__item grid__item--span-9 demo--grid">Nine</div>
+    <div class="grid__item grid__item--span-4 demo--grid">Four</div>
+    <div class="grid__item grid__item--span-8 demo--grid">Eight</div>
+    <div class="grid__item grid__item--span-5 demo--grid">Five</div>
+    <div class="grid__item grid__item--span-7 demo--grid">Seven</div>
+    <div class="grid__item grid__item--span-6 demo--grid">Six</div>
+    <div class="grid__item grid__item--span-6 demo--grid">Six</div>
+    <div class="grid__item grid__item--span-12 demo--grid">Twelve</div>
   </div>
-
   <div class="grid">
-    <div class="grid__item grid__item--span-8 grid__item--demo">Eight</div>
-    <div class="grid__item grid__item--start-10 grid__item--span-2 grid__item--demo">Two / Start col 10</div>
-  </div>
-
-  <div class="grid">
-    <div class="grid__item grid__item--span-4 grid__item--demo">Four</div>
-    <div class="grid__item grid__item--start-8 grid__item--span-4 grid__item--demo">Four / Start col 8</div>
-  </div>
-
-  <div class="grid">
-    <div class="grid__item grid__item--start-5 grid__item--span-7 grid__item--demo">Seven / Start col 5</div>
+    <div class="grid__item grid__item--12">
+      <pre><code>&lt;div class="grid"&gt;
+  &lt;div class="grid__item grid__item--span-6"&gt;&lt;/div&gt;
+  &lt;div class="grid__item grid__item--span-6"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
   </div>
 </section>
 
-<section class="section">
+<section class="demo--section">
   <div class="grid">  
-    <div class="grid__item grid__item--12">
+    <div class="grid__item grid__item--span-12">
       <h2>Typography</h2>
-      <p>All HTML headings, h1 to h6, are available, as well as companion classes .h1 to .h6 in case you need to match the font styling of a heading but still want your text are available, as well as companion classes .h1 to .h6 in case you need to match the font styling of a heading.</p>
-      <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single &lt;html&gt; font-size property.</p>
+      <p>A consistent hierarchy is essential for good design. Amazium provides a full range of heading styles (h1–h6) alongside matching utility classes (.h1–.h6) so you can apply visual styles independently of semantic HTML.</p>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid__item grid__item--span-6">
       <h1>H1 heading: 40px/48px</h1>
       <h2>H2 heading: 36px/44px</h2>
       <h3>H3 heading: 32px/40px</h3>
@@ -115,120 +124,119 @@
       <p>Body Copy: 16px/24px</p>
       <p><small>Small Label: 12px/16px</small></p>
     </div>
+    <div class="grid__item grid__item--span-6">
+      <h5>How It Works</h5>
+      <p>Typography in Amazium is powered by @font-face and design tokens.</p>
+      <pre><code>@font-face {
+  font-family:'txt-body';
+  src:url('../font/your-font-regular.woff') format('woff');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face {
+  font-family:'txt-title';
+  src:url('../font/your-font-heading.woff') format('woff');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}</code></pre>
+    </div>
   </div>  
 </section>
 
-<section class="section">
+<section class="demo--section">
   <div class="grid">  
-    <div class="grid__item grid__item--12">
+    <div class="grid__item grid__item--span-12">
       <h2>Colors</h2>
-      <p>Color defines our brand identity and ensures consistency across products. UI colors are used for action buttons, alerts, and form elements. Input fields can display positive or negative feedback, while alerts provide warning signals.</p>
+      <p>Color in Amazium is structured to provide clarity, consistency, and meaning. A defined palette of brand, semantic, and neutral tones helps guide user interaction and communicate status across your interface.</p>
       <h4>Brand</h4>
-      <ol class="colors">
-        <li class="color-brand-100">color-brand-100</li>
-        <li class="color-brand-200">color-brand-200</li>
-        <li class="color-brand-300">color-brand-300</li>
-        <li class="color-brand-400">color-brand-400</li>
-        <li class="color-brand-500">color-brand-500 /<br> --color-primary</li>
-        <li class="color-brand-600">color-brand-600</li>
-        <li class="color-brand-700">color-brand-700</li>
-        <li class="color-brand-800">color-brand-800</li>
-        <li class="color-brand-900">color-brand-900</li>
+      <ol class="demo--colors">
+        <li class="demo-brand-100">color-brand-100</li>
+        <li class="demo-brand-200">color-brand-200</li>
+        <li class="demo-brand-300">color-brand-300</li>
+        <li class="demo-brand-400">color-brand-400</li>
+        <li class="demo-brand-500">color-brand-500 /<br> --color-primary</li>
+        <li class="demo-brand-600">color-brand-600</li>
+        <li class="demo-brand-700">color-brand-700</li>
+        <li class="demo-brand-800">color-brand-800</li>
+        <li class="demo-brand-900">color-brand-900</li>
       </ol>
 
       <h4>Accent</h4>
-      <ol class="colors">
-        <li class="color-accent-100">color-accent-100</li>
-        <li class="color-accent-300">color-accent-300</li>
-        <li class="color-accent-500">color-accent-500 /<br> --color-secondary</li>
-        <li class="color-accent-700">color-accent-700</li>
-        <li class="color-accent-800">color-accent-800</li>
+      <ol class="demo--colors">
+        <li class="demo-accent-100">color-accent-100</li>
+        <li class="demo-accent-300">color-accent-300</li>
+        <li class="demo-accent-500">color-accent-500 /<br> --color-secondary</li>
+        <li class="demo-accent-700">color-accent-700</li>
+        <li class="demo-accent-800">color-accent-800</li>
       </ol>
 
-      <h4>Positive</h4>
-      <ol class="colors">
-        <li class="color-positive-100">color-positive-100</li>
-        <li class="color-positive-300">color-positive-300</li>
-        <li class="color-positive-500">color-positive-500</li>
-        <li class="color-positive-700">color-positive-700</li>
-        <li class="color-positive-800">color-positive-800</li>
-      </ol>
-
-      <h4>Negative</h4>
-      <ol class="colors">
-        <li class="color-negative-100">color-negative-100</li>
-        <li class="color-negative-300">color-negative-300</li>
-        <li class="color-negative-500">color-negative-500</li>
-        <li class="color-negative-700">color-negative-700</li>
-        <li class="color-negative-800">color-negative-800</li>
-      </ol>
-
-      <h4>Warning</h4>
-      <ol class="colors">
-        <li class="color-warning-100">color-warning-100</li>
-        <li class="color-warning-300">color-warning-300</li>
-        <li class="color-warning-500">color-warning-500</li>
-        <li class="color-warning-700">color-warning-700</li>
-        <li class="color-warning-800">color-warning-800</li>
-      </ol>
-
-      <h4>Information</h4>
-      <ol class="colors">
-        <li class="color-info-100">color-info-100</li>
-        <li class="color-info-300">color-info-300</li>
-        <li class="color-info-500">color-info-500</li>
-        <li class="color-info-700">color-info-700</li>
-        <li class="color-info-800">color-info-800</li>
-      </ol>
-
-      <h4>Neutral</h4>
-      <ol class="colors">
-        <li class="color-neutral-0">--color-neutral-0 /<br> --color-snow</li>
-        <li class="color-neutral-100">--color-neutral-100 /<br> --color-haze</li>
-        <li class="color-neutral-200">--color-neutral-200</li>
-        <li class="color-neutral-300">--color-neutral-300</li>
-        <li class="color-neutral-400">--color-neutral-400 /<br> --color-mist</li>
-        <li class="color-neutral-500">--color-neutral-500</li>
-        <li class="color-neutral-600">--color-neutral-600</li>
-        <li class="color-neutral-700">--color-neutral-700</li>
-        <li class="color-neutral-800">--color-neutral-800</li>
-        <li class="color-neutral-900">--color-neutral-900 /<br> --color-black</li>
+      <h4>UI</h4>
+      <ol class="demo--colors">
+        <li class="demo-ui-0">--color-ui-0 /<br> --color-snow</li>
+        <li class="demo-ui-100">--color-ui-100 /<br> --color-haze</li>
+        <li class="demo-ui-200">--color-ui-200</li>
+        <li class="demo-ui-300">--color-ui-300</li>
+        <li class="demo-ui-400">--color-ui-400 /<br> --color-mist</li>
+        <li class="demo-ui-500">--color-ui-500</li>
+        <li class="demo-ui-600">--color-ui-600</li>
+        <li class="demo-ui-700">--color-ui-700</li>
+        <li class="demo-ui-800">--color-ui-800</li>
+        <li class="demo-ui-900">--color-ui-900 /<br> --color-black</li>
       </ol>
     </div>
   </div>  
 </section>
 
-<section class="section">
+<section class="demo--section">
   <div class="grid">
-    <div class="grid__item grid__item--12">
-      <h2>Buttons</h2>
-      <p>Buttons are the most common interactive element on a website, used to trigger actions, submit forms, or navigate users. Amazium provides simple, adaptable button styles to meet various design needs.</p>
-      <div class="btn-container">
-        <a href="/example" class="btn">Type: Link</a>
-        <button class="btn" type="button">Type: Button</button>
-        <input class="btn" type="button" value="Type: Input">
-        <input class="btn" type="submit" value="Type: Submit">
-        <button class="btn" disabled>Disabled</button>
-      </div>
-
-      <div class="btn-container">
-        <a href="/example" class="btn btn--ghost">Type: Link</a>
-        <button class="btn btn--ghost" type="button">Type: Button</button>
-        <input class="btn btn--ghost" type="button" value="Type: Input">
-        <input class="btn btn--ghost" type="submit" value="Type: Submit">
-        <button class="btn btn--ghost" disabled>Disabled</button>
-      </div>
+    <div class="grid__item grid__item--span-12">
+      <h2>Components</h2>
+      <p>Reusable UI building blocks.</p>
+      <ol class="cards">
+        <li>
+          <div class="card__body">
+            <h6>Iron Man</h6>
+            <p>After the demonstration of the new "Jericho" missile, the convoy is ambushed and Stark is critically wounded by a missile used by the attackers: one of his company's own.</p>
+          </div>
+          <div class="card__footer">Read more →</div>
+        </li>
+        <li>
+          <div class="card__body">
+            <h6>Thor</h6>
+            <p>In 965 AD, Odin, king of Asgard, wages war against the Frost Giants of Jotunheim and their leader Laufey, to prevent them from conquering the Nine Realms, starting with Earth.</p>
+          </div>
+          <div class="card__footer">Read more →</div>
+        </li>
+        <li>
+          <div class="card__body">
+            <h6>Captain America</h6>
+            <p>In New York City, Steve Rogers is rejected for World War II military recruitment due to his various health and physical problems.</p>
+          </div>
+          <div class="card__footer">Read more →</div>
+        </li>
+      </ol>
+      <pre><code>&lt;div class="cards"&gt;
+  &lt;li&gt;
+    &lt;div class="card__body"&gt;...&lt;/li&gt;
+    &lt;div class="card__footer"&gt;...&lt;/li&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
     </div>
-  </div>  
+  </div>
 </section>
 
-<section class="section">
+<section class="demo--section">
   <div class="grid">
-    <div class="grid__item grid__item--12">
+    <div class="grid__item grid__item--span-12">
       <h2>Forms</h2>
-      <p>Forms are essential for user interaction, enabling users to enter and submit information seamlessly. Form inputs can be used individually or in combination with other elements to create structured, accessible forms.</p>
-      <p>Each input should be clearly labeled to guide users on its purpose. This can be done using placeholder text or a visible label to ensure clarity and usability across different devices.</p>
-      <p>Amazium provides a consistent and responsive form system designed for efficiency, accessibility, and ease of use.</p>
+      <p>Flexible and accessible input system.</p>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid__item grid__item--span-6">
       <form action="javascript:void(0);">
         <fieldset>
           <label for="text">First Name</label>
@@ -236,7 +244,6 @@
           <div class="input">
             <input type="text" name="text" id="text" placeholder="Enter your first name">
           </div>
-          <p class="message">Sorry looks like you choose poorly.</p>
         </fieldset>
 
         <fieldset>
@@ -244,7 +251,6 @@
           <div class="input">
             <input type="text" name="text" id="text" placeholder="Enter your last name">
           </div>
-          <p class="message">Sorry looks like you choose poorly.</p>
         </fieldset>
 
         <fieldset>
@@ -260,50 +266,13 @@
               <option value="">50+</option>
             </select>
           </div>
-          <p class="message">Sorry looks like you choose poorly.</p>
         </fieldset>
 
         <fieldset>
-          <label>Label</label>
-          <div class="input input--checkbox">
-            <span>
-              <input type="checkbox" tabindex="" name="checkbox1" id="checkbox1" checked>
-              <label for="checkbox1">Checkbox 1</label>
-            </span>
-
-            <span>
-              <input type="checkbox" tabindex="" name="checkbox2" id="checkbox2">
-              <label for="checkbox2">Checkbox 2</label>
-            </span>
-          </div>
-          <p class="message">Sorry looks like you choose poorly.</p>
-        </fieldset>
-
-        <fieldset class="invalid">
           <label for="text">Message</label>
           <div class="input">
             <textarea cols="50" rows="4" name="comment" placeholder="Write your message here"></textarea>
           </div>
-          <p class="message">Sorry looks like you choose poorly.</p>
-        </fieldset>
-
-        <fieldset>
-          <label>Label</label>
-          <div class="input input--radio">
-            <span>
-              <input type="radio" checked="checked" name="radio" id="radio1">
-              <label for="radio1">
-                <span>Radio - Checked</span>
-              </label>
-            </span>
-            <span>
-              <input type="radio" name="radio" id="radio2">
-              <label for="radio2">
-                <span>Radio - Unchecked</span>
-              </label>
-            </span>
-          </div>
-          <p class="message">Sorry looks like you choose poorly.</p>
         </fieldset>
 
         <fieldset>
@@ -311,40 +280,102 @@
         </fieldset>
       </form>
     </div>
-  </div>  
-</section>
+    <div class="grid__item grid__item--span-6">
+      <pre><code>&lt;form action="javascript:void(0);"&gt;
+  &lt;fieldset&gt;
+    &lt;label for="last-name"&gt;Label text here&lt;/label&gt;
+    &lt;div class="input"&gt;
+      &lt;input type="text" id="last-name" placeholder="..."&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
 
-<section class="section">
-  <div class="grid">
-    <div class="grid__item grid__item--12">
-      <h2>Lists</h2>
-      <p>Lists are good for well listing things i guess, and we have made sure to style a number of them for you including unordered, ordered and definition lists.</p>
+  &lt;fieldset&gt;
+    &lt;label for="age"&gt;Label text here&lt;/label&gt;
+    &lt;div class="input input--select"&gt;
+      &lt;select id="age"&gt;
+        &lt;option disabled selected&gt;...&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
 
-      <div class="grid">
-        <div class="grid__item grid__item--6">
-          <ul>
-            <li>Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</li>
-            <li>Donec sed odio dui. Curabitur blandit tempus por</span>
-              <ul>
-                <li>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="grid__item grid__item--6">
-          <ol>
-            <li>Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</li>
-            <li>Donec sed odio dui. Curabitur blandit tempus por</span>
-              <ol>
-                <li>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.</li>
-              </ol>
-            </li>
-          </ol>
-        </div>
+  &lt;fieldset&gt;
+    &lt;label for="message"&gt;Label text here&lt;/label&gt;
+    &lt;div class="input"&gt;
+      &lt;textarea id="message" rows="4" placeholder="..."&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset&gt;
+    &lt;button class="btn btn--positive"&gt;Button&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
       </div>
     </div>
   </div>
 </section>
+
+<section class="demo--section">
+  <div class="grid">
+    <div class="grid__item grid__item--span-12">
+      <h2>Utilities</h2>
+      <p>Quick helper classes for common styling.</p>
+      <table class="table--mobile table--rowHover" summary="This is an example of a table">
+        <thead>
+          <tr>
+            <th>Utility Class:</th>
+            <th>Description:</th>
+            <th class="txt--center">Example:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-title="Utility Class"><span class="cell-content">.show--mobile</span></td>
+            <td data-title="Description"><span class="cell-content">Displays an element on mobile devices only.</span></td>
+            <td data-title="Example"><span class="cell-content txt--center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon show--mobile"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-title="Utility Class"><span class="cell-content">.show--tablet</span></td>
+            <td data-title="Description"><span class="cell-content">Displays an element on tablets only.</span></td>
+            <td data-title="Example"><span class="cell-content txt--center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon show--tablet"><path d="M480-140q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM200-40q-33 0-56.5-23.5T120-120v-720q0-33 23.5-56.5T200-920h560q33 0 56.5 23.5T840-840v720q0 33-23.5 56.5T760-40H200Zm0-200v120h560v-120H200Zm0-80h560v-400H200v400Zm0-480h560v-40H200v40Zm0 0v-40 40Zm0 560v120-120Z"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-title="Utility Class"><span class="cell-content">.show--screen</span></td>
+            <td data-title="Description"><span class="cell-content">Displays an element on screens (desktop).</span></td>
+            <td data-title="Example"><span class="cell-content txt--center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon show--screen"><path d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-title="Utility Class"><span class="cell-content">.hide--mobile</span></td>
+            <td data-title="Description"><span class="cell-content">Hides an element on mobile devices.</span></td>
+            <td data-title="Example"><span class="cell-content txt--center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon hide--mobile"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-title="Utility Class"><span class="cell-content">.hide--tablet</span></td>
+            <td data-title="Description"><span class="cell-content">Hides an element on tablets.</span></td>
+            <td data-title="Example"><span class="cell-content txt--center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon hide--tablet"><path d="M480-140q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM200-40q-33 0-56.5-23.5T120-120v-720q0-33 23.5-56.5T200-920h560q33 0 56.5 23.5T840-840v720q0 33-23.5 56.5T760-40H200Zm0-200v120h560v-120H200Zm0-80h560v-400H200v400Zm0-480h560v-40H200v40Zm0 0v-40 40Zm0 560v120-120Z"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-title="Utility Class"><span class="cell-content">.hide--screen</span></td>
+            <td data-title="Description"><span class="cell-content">Hides an element on desktop screens.</span></td>
+            <td data-title="Example"><span class="cell-content txt--center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon hide--screen"><path d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"/></svg></span></td>
+          </tr>
+        </tbody>
+      </table> 
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="grid">
+    <div class="grid__item grid__item--span-6">
+      <hr>
+      <h6>Amazium</h6>
+      <p>A lightweight CSS framework for building responsive interfaces with speed and clarity. Designed, built, and battle-tested on real projects—not theory.</p>
+    </div>
+    <div class="grid__item grid__item--span-6 txt--right">
+      <p>Built and maintained by <a href="http:www.mikeballan.co.uk" target="_blank">Mike Ballan</a>.</p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
