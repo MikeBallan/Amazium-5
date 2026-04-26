@@ -51,7 +51,7 @@
   --leading-4xl:          3rem;         /* 48px */
 
   /***** Border system using inset shadows *****/
-  --border-default:       inset 0 0 0 1px var(--color-ui-600);
+  --border-default:       inset 0 0 0 1px var(--color-ui-500);
   --border-focus:         inset 0 0 0 1px var(--color-info-500);
   --border-hover:         inset 0 0 0 3px var(--color-brand-500);
   --border-positive:      inset 0 0 0 1px var(--color-positive-500);
