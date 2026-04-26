@@ -23,6 +23,8 @@ Mobile First - This applies from 0px to 749px
 .invisible                                      { display:none !important; visibility:hidden; }
 .visible                                        { display:block !important; visibility:visible; }
 
+.u-center                                       { justify-content:center; align-items:center; }
+
 /***** Border Radius Utilities *****/
 .radius--none                                   { border-radius:var(--radius-none); }
 .radius--sm                                     { border-radius:var(--radius-sm); }
