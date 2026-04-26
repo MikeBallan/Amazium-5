@@ -37,7 +37,7 @@ body *                                          { letter-spacing:0.02em; }
 
 /***** Headings *****/
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6                    { font-family:'txt-title', serif; color:var(--color-ui-900); margin:0; text-wrap:pretty; }
+.h1, .h2, .h3, .h4, .h5, .h6                    { font-family:'txt-title', serif; margin:0; text-wrap:pretty; }
 
 h1, .h1                                         { font-size:var(--text-4xl); line-height:var(--leading-4xl); }
 h2, .h2                                         { font-size:var(--text-3xl); line-height:var(--leading-3xl); }
