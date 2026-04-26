@@ -11,34 +11,36 @@
 * These styles are NOT part of the framework.
 * Safe to delete when using Amazium in production.
 */
-.demo--grid                                    { padding:var(--space-2); background:var(--color-ui-400); align-items:center; text-align:center; font-size: var(--text-xs); color:var(--color-ui-800); text-transform:uppercase; border-radius:var(--space-1); overflow:hidden; }
-.demo--section                                 { padding:20px; display:flex; flex-direction:column; gap:var(--space-8); }
-.demo--colors                                  { padding-inline-start:0; display:grid; grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) ); gap:var(--space-4); font-size:var(--text-xs); }
-.demo--colors li                               { padding:var(--space-4); height:80px; line-height: var(--leading-xs); display:flex; flex-direction:column; justify-content:flex-end; border-radius:var(--radius-md); }
-.demo-brand-100                                { background-color:var(--color-brand-100); }
-.demo-brand-200                                { background-color:var(--color-brand-200); }
-.demo-brand-300                                { background-color:var(--color-brand-300); }
-.demo-brand-400                                { background-color:var(--color-brand-400); }
-.demo-brand-500                                { background-color:var(--color-brand-500); color:var(--color-ui-0); }
-.demo-brand-600                                { background-color:var(--color-brand-600); color:var(--color-ui-0); }
-.demo-brand-700                                { background-color:var(--color-brand-700); color:var(--color-ui-0); }
-.demo-brand-800                                { background-color:var(--color-brand-800); color:var(--color-ui-0); }
-.demo-brand-900                                { background-color:var(--color-brand-900); color:var(--color-ui-0); }
-.demo-accent-100                               { background-color:var(--color-accent-100); }
-.demo-accent-300                               { background-color:var(--color-accent-300); }
-.demo-accent-500                               { background-color:var(--color-accent-500); color:var(--color-ui-0); }
-.demo-accent-700                               { background-color:var(--color-accent-700); color:var(--color-ui-0); }
-.demo-accent-800                               { background-color:var(--color-accent-800); color:var(--color-ui-0); }
-.demo-ui-0                                     { background-color:var(--color-ui-0); box-shadow:0 0 0 1px var(--color-ui-400); }
-.demo-ui-100                                   { background-color:var(--color-ui-100); box-shadow:0 0 0 1px var(--color-ui-400); }
-.demo-ui-200                                   { background-color:var(--color-ui-200); box-shadow:0 0 0 1px var(--color-ui-400); }
-.demo-ui-300                                   { background-color:var(--color-ui-300); box-shadow:0 0 0 1px var(--color-ui-400); }
-.demo-ui-400                                   { background-color:var(--color-ui-400); }
-.demo-ui-500                                   { background-color:var(--color-ui-500); }
-.demo-ui-600                                   { background-color:var(--color-ui-600); }
-.demo-ui-700                                   { background-color:var(--color-ui-700); color:var(--color-ui-0); }
-.demo-ui-800                                   { background-color:var(--color-ui-800); color:var(--color-ui-0); }
-.demo-ui-900                                   { background-color:var(--color-ui-900); color:var(--color-ui-0); }
+.demo--grid                                    	{ padding:var(--space-2); background:var(--color-ui-400); align-items:center; text-align:center; font-size: var(--text-xs); color:var(--color-ui-800); text-transform:uppercase; border-radius:var(--space-1); overflow:hidden; }
+.demo--section                                 	{ padding:20px; display:flex; flex-direction:column; gap:var(--space-8); }
+.demo--colors                                  	{ padding-inline-start:0; display:grid; grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) ); gap:var(--space-4); font-size:var(--text-xs); }
+.demo--colors li                               	{ padding:var(--space-4); height:80px; line-height: var(--leading-xs); display:flex; flex-direction:column; justify-content:flex-end; border-radius:var(--radius-md); }
+.demo-brand-100                                	{ background-color:var(--color-brand-100); }
+.demo-brand-200                                	{ background-color:var(--color-brand-200); }
+.demo-brand-300                                	{ background-color:var(--color-brand-300); }
+.demo-brand-400                                	{ background-color:var(--color-brand-400); }
+.demo-brand-500                                	{ background-color:var(--color-brand-500); color:var(--color-ui-0); }
+.demo-brand-600                                	{ background-color:var(--color-brand-600); color:var(--color-ui-0); }
+.demo-brand-700                                	{ background-color:var(--color-brand-700); color:var(--color-ui-0); }
+.demo-brand-800                                	{ background-color:var(--color-brand-800); color:var(--color-ui-0); }
+.demo-brand-900                                	{ background-color:var(--color-brand-900); color:var(--color-ui-0); }
+.demo-accent-100                               	{ background-color:var(--color-accent-100); }
+.demo-accent-300                               	{ background-color:var(--color-accent-300); }
+.demo-accent-500                               	{ background-color:var(--color-accent-500); color:var(--color-ui-0); }
+.demo-accent-700                               	{ background-color:var(--color-accent-700); color:var(--color-ui-0); }
+.demo-accent-800                               	{ background-color:var(--color-accent-800); color:var(--color-ui-0); }
+.demo-ui-0                                     	{ background-color:var(--color-ui-0); box-shadow:0 0 0 1px var(--color-ui-400); }
+.demo-ui-100                                   	{ background-color:var(--color-ui-100); box-shadow:0 0 0 1px var(--color-ui-400); }
+.demo-ui-200                                   	{ background-color:var(--color-ui-200); box-shadow:0 0 0 1px var(--color-ui-400); }
+.demo-ui-300                                   	{ background-color:var(--color-ui-300); box-shadow:0 0 0 1px var(--color-ui-400); }
+.demo-ui-400                                   	{ background-color:var(--color-ui-400); }
+.demo-ui-500                                   	{ background-color:var(--color-ui-500); }
+.demo-ui-600                                   	{ background-color:var(--color-ui-600); }
+.demo-ui-700                                   	{ background-color:var(--color-ui-700); color:var(--color-ui-0); }
+.demo-ui-800                                   	{ background-color:var(--color-ui-800); color:var(--color-ui-0); }
+.demo-ui-900                                   	{ background-color:var(--color-ui-900); color:var(--color-ui-0); }
+.card.card--design-hobo 						{ padding:var(--space-4); background-color:var(--color-brand-800); color:var(--color-ui-0); }
+.icon--hobo 									{ width:230px; height:140px; }
 
 /***********************************************
 Tablet - This applies from 750px onwards
