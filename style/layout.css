@@ -12,7 +12,7 @@
 * Safe to delete when using Amazium in production.
 */
 .demo--grid                                    	{ padding:var(--space-2); background:var(--color-ui-400); align-items:center; text-align:center; font-size: var(--text-xs); color:var(--color-ui-800); text-transform:uppercase; border-radius:var(--space-1); overflow:hidden; }
-.demo--section                                 	{ padding:20px; display:flex; flex-direction:column; gap:var(--space-8); }
+.demo--section                                 	{ padding:40px; display:flex; flex-direction:column; gap:var(--space-8); }
 .demo--colors                                  	{ padding-inline-start:0; display:grid; grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) ); gap:var(--space-4); font-size:var(--text-xs); }
 .demo--colors li                               	{ padding:var(--space-4); height:80px; line-height: var(--leading-xs); display:flex; flex-direction:column; justify-content:flex-end; border-radius:var(--radius-md); }
 .demo-brand-100                                	{ background-color:var(--color-brand-100); }
