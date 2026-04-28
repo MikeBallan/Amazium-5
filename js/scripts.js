@@ -3,24 +3,27 @@ const navigation = document.getElementById("navigation");
 
 if (hamburger && navigation) {
 	hamburger.addEventListener("click", () => {
-		hamburger.classList.toggle("active");
-		navigation.classList.toggle("show");
+		const isActive = hamburger.classList.toggle("active");
+		navigation.classList.toggle("show", isActive);
+		document.body.classList.toggle("no-scroll", isActive);
 	});
 } else {
 	console.warn("Hamburger or navigation not found", hamburger, navigation);
 }
 
+// Close on ESC key
+document.addEventListener("keydown", (e) => {
+	if (e.key === "Escape") {
+		hamburger?.classList.remove("active");
+		navigation?.classList.remove("show");
+		document.body.classList.remove("no-scroll");
+	}
+});
+
 // Nav scroll styling
-const nav = document.querySelector(".navigation");
-
 function handleScroll() {
-    if (!nav) return;
-
-    if (window.scrollY > 200) {
-        nav.classList.add("navigation--active");
-    } else {
-        nav.classList.remove("navigation--active");
-    }
+	if (!navigation) return;
+	navigation.classList.toggle("navigation--active", window.scrollY > 200);
 }
 
 window.addEventListener("scroll", handleScroll);
