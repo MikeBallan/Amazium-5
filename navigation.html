@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Amazium</title>
+	<title>Amazium - Navigation Demo</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<![endif]--> 
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -18,16 +18,16 @@
 	<link rel="stylesheet" href="style/utilities.css">
 	<link rel="stylesheet" href="style/grid.css">
 	<link rel="stylesheet" href="style/typography.css">
-	<link rel="stylesheet" href="style/layout.css">
+	<link rel="stylesheet" href="style/layout.css?refreshcss=3">
 
-	<!-- CSS -->
+	<!-- CSS - Components -->
 	<link rel="stylesheet" href="style/avatar.css">
+	<link rel="stylesheet" href="style/badge.css">
 	<link rel="stylesheet" href="style/button.css">
 	<link rel="stylesheet" href="style/card.css">
 	<link rel="stylesheet" href="style/dialog.css">
 	<link rel="stylesheet" href="style/lists.css">
-	<link rel="stylesheet" href="style/navigation.css">
-	<link rel="stylesheet" href="style/pill.css">
+	<link rel="stylesheet" href="style/navigation.css?refreshcss=1">
 	<link rel="stylesheet" href="style/table.css">
 
 	<!-- CSS - Forms -->
@@ -35,8 +35,8 @@
 	<link rel="stylesheet" href="style/form-base.css">
 	<link rel="stylesheet" href="style/form-behaviour.css">
 
-  <!-- Scripts -->
-  <script src="js/scripts.js" defer></script>
+	<!-- Scripts -->
+	<script src="js/scripts.js" defer></script>
 	
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -50,24 +50,61 @@
 
 <nav class="navigation" id="navigation">
 	<div class="navigation__title">
-		<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" class="icon icon--logo"><path d="M63 0v63H0V0zm-3 3H3v57h57zM25.044 18l10.352 28h-6.863l-2.043-5.88H15.77L13.728 46H7l10.352-28zM54 26v4.71l-8.332 9.643H54V46H37.354v-4.567l8.332-9.786h-8.332V26zm-32.802-1-3.427 9h6.854zm30.18-14.233q.224 0 .392.172a.574.574 0 0 1 0 .811.533.533 0 0 1-.786 0 .57.57 0 0 1-.002-.81.54.54 0 0 1 .396-.173m3.402-2.7v.807h-1.437l-.015.595h.361l.2.008q.481.044.768.304.343.312.343.83 0 .597-.392.955-.392.36-1.002.359-.41 0-.751-.144a1.8 1.8 0 0 1-.452-.27l-.124-.114.422-.643.111.094q.122.091.289.165.25.111.5.111.251 0 .385-.123a.43.43 0 0 0 .133-.331q0-.38-.511-.422l-.136-.006h-.907l.047-2.174zM48.956 8q.382 0 .693.128.31.13.498.38a.95.95 0 0 1 .188.585q0 .584-.554.85.645.267.645.88a.92.92 0 0 1-.2.59 1.23 1.23 0 0 1-.532.38 2 2 0 0 1-.738.129q-.407 0-.738-.128a1.23 1.23 0 0 1-.532-.382.92.92 0 0 1-.2-.588q0-.617.642-.882-.55-.265-.55-.85 0-.332.187-.583a1.15 1.15 0 0 1 .496-.38Q48.573 8 48.956 8m-1.767.068v.687l-1.447 3.1h-1.011l1.446-2.973h-1.643v-.814zm1.767 2.212a.62.62 0 0 0-.388.12.39.39 0 0 0-.157.326q0 .207.156.32a.64.64 0 0 0 .389.113.64.64 0 0 0 .386-.113.37.37 0 0 0 .156-.32.39.39 0 0 0-.157-.327.6.6 0 0 0-.385-.119m0-1.504a.53.53 0 0 0-.338.106.35.35 0 0 0-.134.295q0 .192.134.301.134.11.338.11a.5.5 0 0 0 .335-.11.37.37 0 0 0 .134-.301.35.35 0 0 0-.134-.295.53.53 0 0 0-.335-.106"/></svg></a>
+		<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" class="icon icon--logo"><path d="M63 0v63H0V0zm-3 3H3v57h57zM25.044 18l10.352 28h-6.863l-2.043-5.88H15.77L13.728 46H7l10.352-28zM54 26v4.71l-8.332 9.643H54V46H37.354v-4.567l8.332-9.786h-8.332V26zm-32.802-1-3.427 9h6.854zm30.18-14.233q.224 0 .392.172a.574.574 0 0 1 0 .811.533.533 0 0 1-.786 0 .57.57 0 0 1-.002-.81.54.54 0 0 1 .396-.173m3.402-2.7v.807h-1.437l-.015.595h.361l.2.008q.481.044.768.304.343.312.343.83 0 .597-.392.955-.392.36-1.002.359-.41 0-.751-.144a1.8 1.8 0 0 1-.452-.27l-.124-.114.422-.643.111.094q.122.091.289.165.25.111.5.111.251 0 .385-.123a.43.43 0 0 0 .133-.331q0-.38-.511-.422l-.136-.006h-.907l.047-2.174zM48.956 8q.382 0 .693.128.31.13.498.38a.95.95 0 0 1 .188.585q0 .584-.554.85.645.267.645.88a.92.92 0 0 1-.2.59 1.23 1.23 0 0 1-.532.38 2 2 0 0 1-.738.129q-.407 0-.738-.128a1.23 1.23 0 0 1-.532-.382.92.92 0 0 1-.2-.588q0-.617.642-.882-.55-.265-.55-.85 0-.332.187-.583a1.15 1.15 0 0 1 .496-.38Q48.573 8 48.956 8m-1.767.068v.687l-1.447 3.1h-1.011l1.446-2.973h-1.643v-.814zm1.767 2.212a.62.62 0 0 0-.388.12.39.39 0 0 0-.157.326q0 .207.156.32a.64.64 0 0 0 .389.113.64.64 0 0 0 .386-.113.37.37 0 0 0 .156-.32.39.39 0 0 0-.157-.327.6.6 0 0 0-.385-.119m0-1.504a.53.53 0 0 0-.338.106.35.35 0 0 0-.134.295q0 .192.134.301.134.11.338.11a.5.5 0 0 0 .335-.11.37.37 0 0 0 .134-.301.35.35 0 0 0-.134-.295.53.53 0 0 0-.335-.106"/></svg></a>
 	</div>
 	<ol class="navigation__menu">
-		<li><a href="">Menu #01</a></li>
-		<li><a href="">Menu #02</a></li>
-		<li><a href="">Menu #03</a></li>
-		<li><a href="">Menu #04</a></li>
-		<li><a href="">Menu #05</a></li>
-		<li><a href="" class="btn">CTA →</a></li>
+		<li class="active"><a href="">Menu #01</a></li>
+		<li><a href="#">Menu #02</a></li>
+		<li><a href="#">Menu #03</a></li>
+		<li><a href="#">Menu #04</a></li>
+		<li><a href="#" class="btn">CTA link →</a></li>
 	</ol>
 </nav>
 
+<header class="demo--header">
+	<div class="grid">
+		<div class="grid__item grid__item--span-12 txt--center">
+			<h1>Navigation Component Demo</h1>
+			<p>A responsive navigation pattern featuring a mobile-first hamburger menu, smooth transitions, and a flexible layout that adapts across breakpoints.</p>
+		</div>
+	</div>
+</header>
+
 <section class="demo--section">
 	<div class="grid">
-		<div class="grid__item grid__item--span-12">
-		<h1>Title</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec velit placerat, egestas mi pellentesque, fringilla risus. Maecenas dapibus porttitor dui, a finibus neque consequat ut. Pellentesque vehicula mauris eu enim volutpat, eu dignissim turpis scelerisque. Aliquam erat volutpat. Mauris sit amet sem suscipit tellus ornare commodo. Etiam magna ligula, euismod at finibus eu, elementum vitae nisl. Etiam in metus enim. Cras sed nulla erat. Integer vestibulum nulla vitae mi placerat iaculis. Quisque fringilla erat nibh, a viverra mauris tempus a. Proin odio enim, hendrerit sed lacus vitae, gravida interdum lectus.</p>
-		<p>Maecenas aliquam augue a venenatis congue. Aliquam erat volutpat. Aenean quis eleifend eros. Vestibulum lectus risus, viverra a facilisis nec, luctus non elit. In cursus condimentum volutpat. Praesent imperdiet consequat turpis, a pellentesque dui congue eu. Pellentesque at imperdiet quam.</p>
+		<div class="grid__item grid__item--span-8">
+			<h2>Overview</h2>
+			<p>This demo showcases a custom-built navigation system designed for scalability and clarity. On smaller screens, the menu collapses into a hamburger trigger, expanding into a full-screen overlay.</p>
+			<p>On larger screens, it becomes a horizontal navigation bar.</p>
+		</div>
+		<div class="grid__item grid__item--span-4">
+			<h2>Key Features</h2>
+			<ul>
+				<li>Mobile-first hamburger interaction</li>
+				<li>Animated icon transitions</li>
+				<li>Full-screen overlay navigation</li>
+				<li>Responsive layout switching at 750px</li>
+				<li>Support for primary actions (CTA)</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="demo--section">
+	<div class="grid">
+		<div class="grid__item grid__item--span-6">
+			<hr>
+			<h2>Lorem ipsum</h2>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="grid__item grid__item--span-6">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum elit justo, non aliquam ligula commodo sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et eros nec erat dapibus tincidunt at sed dolor. Donec condimentum blandit magna non dignissim. Morbi eu nunc vel mauris dignissim elementum. Donec et venenatis dolor. Quisque dignissim magna quis augue auctor bibendum. Maecenas feugiat felis varius, iaculis magna id, bibendum dui. Sed tempor tellus justo, sit amet consequat neque ornare vel. Etiam elementum elit molestie sem maximus molestie. Nunc ut sodales magna. Donec nec tincidunt nisi. Mauris elementum felis urna, suscipit sagittis metus convallis eu. Curabitur hendrerit auctor nisi sed lobortis. Duis vehicula neque sit amet accumsan mollis.</p>
+			<p>Duis sit amet velit ut turpis venenatis elementum sed nec libero. Donec varius nibh eget sagittis suscipit. Nullam sit amet laoreet augue, id bibendum turpis. Nunc pulvinar elementum molestie. Nunc convallis lorem eget pulvinar ullamcorper. Donec luctus turpis quis sem scelerisque, sed pharetra urna ullamcorper. Suspendisse lobortis sem sit amet aliquet posuere. Aliquam luctus mi nec ligula cursus vulputate. Nulla facilisi. Aliquam eget ex quis dui aliquam pharetra. Nulla pretium lorem leo, dignissim efficitur elit vehicula id. Ut accumsan odio non faucibus eleifend. Integer sit amet posuere lectus.</p>
+		</div>
+		<div class="grid__item grid__item--span-6">
+			<p>Donec ultrices varius dapibus. Etiam eu tincidunt ipsum, dignissim sagittis neque. Praesent nulla velit, lobortis eget molestie eu, ornare non dui. Pellentesque vel nulla id ante bibendum aliquet. Integer molestie, erat sed porta dapibus, nulla ligula feugiat felis, eget rhoncus sapien sem quis est. Sed elementum, metus a aliquet euismod, mi lacus maximus risus, at finibus mauris metus non sapien. Fusce ut quam finibus, congue leo vel, bibendum purus. Mauris lacinia sit amet lorem id suscipit. Nulla bibendum, sapien nec accumsan scelerisque, dolor nisi vulputate tortor, et cursus tellus nunc quis lectus. Donec ut interdum mauris, quis faucibus nunc. Morbi posuere, ligula et tincidunt cursus, sem velit condimentum odio, sed cursus justo dolor vel ex. Mauris sit amet luctus risus. Nullam cursus luctus est sed finibus. Sed condimentum tortor nec ex euismod eleifend.</p>
+			<p>Integer eros dolor, volutpat nec dapibus vel, aliquam id ipsum. Duis lacinia arcu vitae lacus vestibulum, in malesuada lorem ultrices. Fusce ut convallis ligula, ac venenatis ex. Nulla facilisi. Aliquam nec neque tempor, pretium ex eget, porttitor nisi. Nullam in purus feugiat, posuere velit ac, tristique risus. Proin maximus et velit vel ultricies. Aliquam luctus feugiat erat, venenatis bibendum mauris mattis eu.</p>
 		</div>
 	</div>
 </section>
