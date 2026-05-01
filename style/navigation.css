@@ -22,7 +22,7 @@ body.no-scroll 																	{ overflow:hidden; }
 .hamburger.active .middle 											{ opacity:0; }
 
 /* Navigation */
-.navigation 																		{ padding:40px; width:100vw; height:100vh; color:var(--color-ui-0); background-color:var(--color-brand-900); display:flex; gap:var(--space-6); flex-direction:column; position:fixed; top:0; left:100vw; z-index:99; transition:all 0.2s ease;
+.navigation 																		{ padding:40px; width:100vw; height:100dvh; color:var(--color-ui-0); background-color:var(--color-brand-900); display:flex; gap:var(--space-6); flex-direction:column; position:fixed; top:0; left:100vw; z-index:99; transition:all 0.2s ease;
 	&.show 																				{ left:0; transition:all 0.2s ease; }
 }
 
