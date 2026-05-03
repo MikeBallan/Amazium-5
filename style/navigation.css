@@ -41,7 +41,6 @@ body.no-scroll 																	{ overflow:hidden; }
 	a 																						{ text-decoration:none; display:flex; flex:1; gap:var(--space-2); align-items:center; position:relative; transition:all 0.2s ease; }
 }
 
-
 /***********************************************
 Tablet - This applies from 750px onwards
 ***********************************************/
@@ -63,18 +62,14 @@ Tablet - This applies from 750px onwards
 	}
 }
 
-
 /***********************************************
-Screen - This applies from 1200px onwards
+Desktop - This applies from 1000px onwards
 ***********************************************/
-@media (min-width:1200px) {
-
+@media (min-width:1000px)                       {
 }
-
 
 /***********************************************
 Desktop HD
 ***********************************************/
 @media (min-width:1440px)                       {
-
 }
